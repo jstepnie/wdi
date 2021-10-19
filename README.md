@@ -4,8 +4,6 @@ Ala ma kota
 1. klon
 2. modrzew
 3. sosna
+bieganie
 
--dom
--pralka
--wulkan
-
+mam 22, nie wiem 
