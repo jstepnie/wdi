@@ -8,3 +8,5 @@ bieganie
 
 mam 22, nie wiem
 ![img_1.png](img_1.png)
+
+<img src="laboratorium_2/cat.jpg">
