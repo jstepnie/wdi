@@ -6,4 +6,4 @@ Ala ma kota
 3. sosna
 bieganie
 
-mam 22, nie wiem 
+mam 22, nie wiem ![img.png](img.png)
