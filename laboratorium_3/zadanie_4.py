@@ -17,5 +17,5 @@ Stępniewski
 ulubione zwierzę: wilk
 ulubiona potrawa: pizza
 """)
-print(%5,)
+
 
