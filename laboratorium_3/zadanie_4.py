@@ -16,5 +16,6 @@ print("""Jan
 Stępniewski
 ulubione zwierzę: wilk
 ulubiona potrawa: pizza
-wynik dzielenia 5 przez 7 = 0.7""")
+""")
+print(%5,)
 
