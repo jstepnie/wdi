@@ -17,4 +17,4 @@ for pac in range(0, a):
 
                 print('*', end = "")
     print('\r')
-print((a) * " ","U")
+print((a - 1) * " ","U")
