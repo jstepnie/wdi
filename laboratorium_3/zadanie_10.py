@@ -77,7 +77,7 @@ while True:
             else:
                 print("zabawa od nowa")
     elif task == "L":
-        if number_1 >= number_2:
+        if number_1 > number_2:
             field = random.randint(number_1, number_2)
             print("wylosowana liczba to: ", field)
             response = input("czy chcesz zrobić inne obliczenia? (T/N)")
