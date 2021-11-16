@@ -26,11 +26,11 @@ while True:
         # print(list_m)
         # print(list_sub)
         for d in list_m:
-            if min(list_sub) == abs(d - (number / d)):
+            if min(list_sub) == (d - (number / d)):
                 print("iloczyn, o najmniejszej różnicy składników, tworzący tą liczbę: ")
                 print(number, "=", d, "*", (number / d))
             else:
-                print(".")
+                list_m = list_m
         break
 
 
