@@ -13,9 +13,9 @@ while True:
             print("liczba musi być naturalna!")
             break
         else:
-            int(number)
-            int(number_2)
-            for i in range(1, int(number_2 + 1)):
+            number = int(number)
+            number_2 = int(number_2)
+            for i in range(1, number_2 + 1):
 
                 if (number % i == 0) and list_m.count(i) == 0:
                     print("dzielnik liczby to: ", i)
@@ -38,6 +38,7 @@ while True:
                 else:
                     list_m = list_m
             break
+    break
 
 #przykłady testowe - 2342938472 = 41838187.0 * 56, -5 - nie zwróci,
 
