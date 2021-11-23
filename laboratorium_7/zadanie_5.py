@@ -46,5 +46,5 @@ while True:
 
     except ValueError:
         print("wprowadzono tekst nie liczbę")
-        print("Janek to frajer pompka")
+
 
