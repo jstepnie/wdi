@@ -1,6 +1,6 @@
 import random
 
-print("soczek")
+print("program losujący 1000 liczb między podanymi i znajdujący te składające się z cyfr nieparzystch")
 while True:
     try:
         liczba_1 = float(input("Proszę podać liczbę, będącą dolną granicą zakresu: "))
@@ -18,7 +18,7 @@ while True:
                 kolejka = 10
                 cyfra = a % 10
                 reszty = a % 10
-                while cyfra % 2 != 0 and kolejka / 10 <= a:
+                while cyfra % 2 != 0 and kolejka / 10 <= a: #szukanie liczb składających się z nieparzystych
                     cyfra = reszta(a - reszty, kolejka * 10)
                     reszty = reszty + cyfra
                     cyfra = cyfra / kolejka
@@ -30,17 +30,17 @@ while True:
                     else:
                         kolejka = kolejka
 
-                if list_1.count(a) == 0:
+                if list_1.count(a) == 0: #dodwanie liczby do listy tak, żeby się nie powtarzały
                     list_1.append(a)
                     i = i + 1
                 else:
                     list_1 = list_1
 
         elif liczba_1 == liczba_2:
-            print("Mają być różne gościu")
+            print("Mają być różne od siebie")
         else:
             print("Muszą być od siebie różne o ten tysiąc i jeden")
-        list_1.sort()
+        list_1.sort() #sortowanie od najmniejszej i odwrócenie liczb w tablicy
         list_1.reverse()
         print(list_1)
 
