@@ -7,7 +7,7 @@ while True:
             raise ValueError
         print(liczba)
 
-        def rFinder(tab : list): #funkcja sprawdzająca czy kolejne elementy
+        def rFinder(tab : list): #funkcja sprawdzająca czy kolejne elementy tworzą ciąg arytmetyczny
             nlength = 0
             plength = 0
             # rC1 = 0
@@ -45,7 +45,7 @@ while True:
             print("Najdłuższy ciąg o dodatniej różnicy ma {} cyfr".format(max(ptab)))
             print("Różnica między ilością elementów w tych ciągach(d - u) {}".format(max(ptab) - max(ntab)))
 
-        def listGenerator(N : int):
+        def listGenerator(N : int): #utworzenie listy N nieparzystych liczb pseudolosowych(
 
             tab = []
 
@@ -55,7 +55,6 @@ while True:
                     tab.append(i)
             return tab
 
-        # listGenerator(20000)
         rFinder(listGenerator(liczba))
     except ValueError:
         print("proszę podać liczbę naturalną dodatnią")
