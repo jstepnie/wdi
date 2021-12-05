@@ -1,3 +1,4 @@
+print("Program tworzący tablicę n x n i dający True jeśli w każdym wierszu i kolumnie jest co najmniej jedno 0")
 import random
 while True:
     try:
