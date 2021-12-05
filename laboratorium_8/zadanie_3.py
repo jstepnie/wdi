@@ -56,5 +56,7 @@ while True:
             return tab
 
         rFinder(listGenerator(liczba))
+        rFinder([1,2,3,4,7,3,2,1])
+        break
     except ValueError:
         print("proszę podać liczbę naturalną dodatnią")
