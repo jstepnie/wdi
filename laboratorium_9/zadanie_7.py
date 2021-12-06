@@ -3,7 +3,7 @@ import random
 while True:
     try:
         n = float(input("podaj wymiar n tablicy kwadratowej"))
-        liczba = 3
+        liczba = 2
         # liczba = float(input("podaj najwyższą liczbę, do której program losuje elementy do tablicy"))
         flag = 0
         testowa1 = [[0,1,2,3,4],[1,0,2,3],[1,2,0,3],[1,2,3,0]] #powino pokazać true
@@ -13,7 +13,8 @@ while True:
         wiersz = []
         n = int(n)
         tablica = [[random.randint(0,liczba) for x in range(n)] for y in range(n)]
-        print(tablica)
+        for y in tablica:
+            print(y)
         def zerofinder(tablica, n):
             miejsce = []
             flag = True
@@ -23,6 +24,7 @@ while True:
                 else:
                     while y.count(0) != 0:
                             miejsce.append(y.index(0))
+                            y.insert(y.index(0), 1)
                             y.remove(0)
             for i in range(0, n ):
                 if miejsce.count(i) == 0:
