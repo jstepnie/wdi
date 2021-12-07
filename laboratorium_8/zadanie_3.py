@@ -3,6 +3,14 @@ print("program losujący n liczb nieparzystych z zakresu 1-99 i wyznaczający r�
 while True:
     try:
         liczba = float(input("podaj liczbę naturalną dodatnią: "))
+        # n = 0
+        # testtablica = []
+        # while n < 10 :
+        #     element = int(input("Podaj elementy do przykładowej tablicy, aby sprawdzić działanie programu"))
+        #     testtablica.append(element)
+        #     n = n + 1
+            # if element <= 0:
+            #     raise ValueError
         if liczba <= 0 or liczba % 1 != 0:
             raise ValueError
         print(liczba)
@@ -57,6 +65,14 @@ while True:
 
         rFinder(listGenerator(liczba))
         rFinder([1,2,3,4,7,3,2,1])
+        rFinder(testtablica)
         break
     except ValueError:
         print("proszę podać liczbę naturalną dodatnią")
+
+        n = 0
+        testtablica = []
+        while n < 10 :
+            element = int(input("Podaj elementy do przykładowej tablicy, aby sprawdzić działanie programu"))
+            testtablica.append(element)
+            n = n + 1

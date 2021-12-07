@@ -2,7 +2,7 @@ print("Program tworzący tablicę n x n i dający True jeśli w każdym wierszu 
 import random
 while True:
     try:
-        n = float(input("podaj wymiar n tablicy kwadratowej"))
+        n = float(input("podaj wymiar n tablicy kwadratowej: "))
         liczba = 2
         # liczba = float(input("podaj najwyższą liczbę, do której program losuje elementy do tablicy"))
         flag = 0
@@ -12,14 +12,14 @@ while True:
             raise ValueError
         wiersz = []
         n = int(n)
-        tablica = [[random.randint(0,liczba) for x in range(n)] for y in range(n)]
+        tablica = [[random.randint(0,liczba) for x in range(n)] for y in range(n)] #tworzenie tablicy o wymiarach n x n
         for y in tablica:
             print(y)
         def zerofinder(tablica, n):
-            miejsce = []
+            miejsce = [] #tablica posiadająca numery indeksu zera w wierszach
             flag = True
             for y in tablica:
-                if y.count(0) == 0:
+                if y.count(0) == 0: #warunek na 0 w każdym wierszu
                     flag = False
                 else:
                     while y.count(0) != 0:
@@ -27,7 +27,7 @@ while True:
                             y.insert(y.index(0), 1)
                             y.remove(0)
             for i in range(0, n ):
-                if miejsce.count(i) == 0:
+                if miejsce.count(i) == 0:  #sprawdzanie czy w każdej kolumnie jest 0
                     flag = False
             print(flag)
 
