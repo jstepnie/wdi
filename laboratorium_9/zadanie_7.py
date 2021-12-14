@@ -26,7 +26,7 @@ while True:
                             miejsce.append(y.index(0))
                             y.insert(y.index(0), 1)
                             y.remove(0)
-            for i in range(0, n ):
+            for i in range(0, n):
                 if miejsce.count(i) == 0:  #sprawdzanie czy w każdej kolumnie jest 0
                     flag = False
             print(flag)
