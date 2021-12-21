@@ -32,7 +32,7 @@ def addition(wordsA, wordsB, repetition, filepathC):
     for y2 in wordsB:
         for x2 in y2:
             wordsB1.append(x2)
-    for element in repetition:
+    for element in repetition1:
         if wordsA1.count(element) != 0:
             wordsA1.remove(element)
         if wordsB1.count(element) != 0:
@@ -53,6 +53,10 @@ def addition(wordsA, wordsB, repetition, filepathC):
                 plikC.write("\n")
                 a = a + 7
                 b = b + 7
+    plikC.write("\n")
+    for element in repetition1:
+        plikC.write(str(element))
+        plikC.write(" ")
     plikC.close()
 
 def substraction(wordsA, repetition, filepathC):
