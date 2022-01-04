@@ -95,6 +95,6 @@ def multiplication(repetition, filepathC):
 pobranieA = pobranie_danych(filepathA)
 pobranieB = pobranie_danych(filepathB)
 repetitionU = repetition(pobranieA, pobranieB)
-addition(pobranieA, pobranieB, repetitionU, filepathC)
+# addition(pobranieA, pobranieB, repetitionU, filepathC)
 # substraction(pobranieA, repetitionU, filepathC)
-# multiplication(repetitionU, filepathC)
+multiplication(repetitionU, filepathC)
