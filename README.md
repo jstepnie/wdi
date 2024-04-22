@@ -1,3 +1,5 @@
+This repo involves my code from my python class, and this readme file also involves adding images from code
+
 # wdi
 Jan Stępniewski 
 Ala ma kota
